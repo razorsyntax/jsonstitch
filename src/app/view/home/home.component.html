@@ -1,0 +1,21 @@
+<div>
+    <div>
+        {{loading}}
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th class="pad">Id</th>
+                <th class="pad">First</th>
+                <th class="pad">Last</th>
+            </tr>
+
+            <tr *ngFor="let person of personArr | async">
+                <td class="pad">{{person?.id}}</td>
+                <td class="pad">{{person?.firstName}}</td>
+                <td class="pad">{{person?.lastName}}</td>
+            </tr>
+        </table>        
+    </div>
+
+</div>
