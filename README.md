@@ -1,5 +1,7 @@
 # Notes
 
+Run `npn install` to install everything and then `ng serve` to run it.
+
 This uses rxjs to mock the ui calls using a random number generator to pick an arbitrary time for each call.  It then converts the xml to json and stitches them together and subscribes to the forkjoin using an async pipe.  The UI will show a loading text and then display the combined values in a table.
 
 # Jsonstitch
